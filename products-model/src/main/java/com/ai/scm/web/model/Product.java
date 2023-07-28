@@ -1,5 +1,5 @@
 package com.ai.scm.web.model;
 
-public class ProductModel {
+public class Product {
 
 }

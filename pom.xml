@@ -6,6 +6,9 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>products-web</module>
+		<module>products-model</module>
+		<module>products-service</module>
+		<module>products-dao</module>
 	</modules>
 	<properties>
 		<java.version>11</java.version>
