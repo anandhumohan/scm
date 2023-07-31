@@ -14,18 +14,16 @@ import com.ai.scm.web.service.ProductService;
 @RequestMapping("/products")
 public class ProductController {
 
-    
-    private final ProductService productService;
+	private final ProductService productService;
 
-    
-    public ProductController(ProductService productService) {
-        this.productService = productService;
-    }
+	public ProductController(ProductService productService) {
+		this.productService = productService;
+	}
 
-    @PostMapping
-    public ResponseEntity<Product> createProduct(@RequestBody Product product) {
-        Product createdProduct = productService.createProduct(product);
-        return new ResponseEntity<>(createdProduct, HttpStatus.CREATED);
-    }
+	@PostMapping
+	public ResponseEntity<Product> createProduct(@RequestBody Product product) {
+		Product createdProduct = productService.createProduct(product);
+		return new ResponseEntity<>(createdProduct, HttpStatus.CREATED);
+	}
 
 }

@@ -6,4 +6,11 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>products-model</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.ai.scm</groupId>
+  		<artifactId>products-web</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
