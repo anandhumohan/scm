@@ -6,8 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.ai.scm.web.model.Product;
 
 @Repository
-public interface ProductDAO extends MongoRepository<Product, Long>{
-
-	
+public interface ProductDAO extends MongoRepository<Product, Long> {
 
 }
