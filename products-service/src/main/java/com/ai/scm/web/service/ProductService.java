@@ -1,5 +1,7 @@
 package com.ai.scm.web.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.ai.scm.web.dao.ProductDAO;
@@ -17,6 +19,10 @@ public class ProductService {
 	public Product createProduct(Product product) {
 
 		return productRepository.save(product);
+	}
+
+	public List<Product> getAllProducts() {
+		return productRepository.findAll();
 	}
 
 }
